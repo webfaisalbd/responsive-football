@@ -62,7 +62,7 @@ color: white;
     justify-content: center;
 }
 
-.player-card{
+.player-card, .match{
     width: 310px;
     height: 474px;
     margin:10px 30px;
@@ -72,13 +72,56 @@ color: white;
     
 }
 
-.player-image img{
+.match{
+    width: 310px;
+    height: 474px;
+    margin:10px 30px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+ .match img{
+    width: 310px;
+    height: 256px;
+    border-radius: 50px;
+}
+
+.player-image img, .match img{
     width: 310px;
     height: 256px;
 }
 /*------- end  ---------*/
 
+/* extra work  start */
+.table-positioning{
+    display: flex;
+    justify-content: center;
+}
+.table-part{
+    width: 600px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+      
+}
 
+.table-part  td, th {
+    
+    text-align: left;
+    padding: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .table-part-title{
+      padding: 25px;
+      font-size: 20px;
+      background-color: #2D25A0;
+      color: white;
+  }
+/* extra work end  */
 /* footer start --- */
 .footer-image img{
     width: 271px;
@@ -104,6 +147,20 @@ footer p{
 
 
 
+/* match-update   */
+
+.match-update{
+    display: flex;
+    justify-content: center;
+}
+ .match-title{
+    font-size: 30px;
+    background-color: #2D25A0;
+    margin:0 370px;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+} 
 
 
 
@@ -129,28 +186,64 @@ footer p{
     display: grid;
     grid-template-columns: repeat(1,1fr);
    }
+
+   .half-width img{
+    width: 150%;
+}
+
     .footer-part{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     }
 
-}
+    .table-part{
+        width: 400px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+          
+    }
+
+    .match-update{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+        
+    .match-title{
+        font-size: 20px;
+        background-color: #2D25A0;
+        margin:0px;
+        padding: 15px 0;
+        text-align: center;
+        color: white;
+    }    
+    }
 
 
-   
- 
-    
-}
+
 
 @media only screen and (min-width:689px) and (max-width:992px) {
 
-    .players-card
-    {
+    .players-card{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         
         
     } 
+    .match-update{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+
+    .match-title{
+            font-size: 20px;
+            background-color: #2D25A0;
+            margin:0;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+        }    
     
 }
+
+
 
