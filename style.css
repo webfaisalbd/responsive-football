@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-/* copa-america-cup (first section) start */
+/* copa-america-cup (first section) */
 .copa-container{
     background-color: #2D25A0;
 }
 
 section{
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 .copa-america-cup{
     display: flex;
@@ -54,7 +57,7 @@ color: white;
 
 
 /* ---------------copa-america-cup 
------------(first section) start-------------- */
+---------------- */
 
 
 .players-card{
@@ -72,28 +75,20 @@ color: white;
     
 }
 
-.match{
-    width: 310px;
-    height: 474px;
-    margin:10px 30px;
-    padding: 10px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+.match,.match img{
+ 
+    border-radius: 50px;  
     
-}
- .match img{
-    width: 310px;
-    height: 256px;
-    border-radius: 50px;
-}
+} 
+
 
 .player-image img, .match img{
     width: 310px;
     height: 256px;
 }
-/*------- end  ---------*/
 
-/* extra work  start */
+
+/* Copa America Table 2020-21(Group A)  */
 .table-positioning{
     display: flex;
     justify-content: center;
@@ -121,8 +116,24 @@ color: white;
       background-color: #2D25A0;
       color: white;
   }
-/* extra work end  */
-/* footer start --- */
+
+
+  /* Top football matches update  */
+
+.match-update{
+    display: flex;
+    justify-content: center;
+}
+ .match-title{
+    font-size: 30px;
+    background-color: #2D25A0;
+    margin:0 370px;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+} 
+
+/* footer  --- */
 .footer-image img{
     width: 271px;
     height: 63px;
@@ -141,34 +152,6 @@ color: white;
 footer p{
     text-align: center;
 }
-
-
-/* footer end  */
-
-
-
-/* match-update   */
-
-.match-update{
-    display: flex;
-    justify-content: center;
-}
- .match-title{
-    font-size: 30px;
-    background-color: #2D25A0;
-    margin:0 370px;
-    padding: 15px 0;
-    text-align: center;
-    color: white;
-} 
-
-
-
-
-
-
-
-
 
 
 
